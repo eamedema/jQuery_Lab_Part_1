@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  background: #E1D7D4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.rubik {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-weight: 700;
+  color: #E34E45;
+}
+
+.roboto {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.topContent{
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titles{
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+.tables {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.table {
+  border-radius: 50px;
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserved {
+  background-color: #ADAAAA;
+  color: white;
+}
+
+.open {
+  background-color: #EEE;
+  color: black;
+}
+
+.hidden{
+  display: none;
+}
+
+.close {
+  text-align: right;
+  color: #CCC;
+  font-size: 12px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  cursor: default;
+  margin: 0;
+  padding: 0;
+}
+
+.clear {
+  text-align: center;
+  color: #CCC;
+  font-size: 12px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+#formContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 15vh;
+  /* display: none; */
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+#id {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputs {
+  outline:0;
+  width: 100%;
+  margin: 15px 0 15px 0;
+  padding: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 3px #CCC;
+  
+}
+
+.button {
+  text-transform: uppercase;
+  width: 100%;
+  padding: 10px;
+  background-color: #008000;
+  color: white;
+  box-shadow: 0px 5px 15px 1px rgba(0,0,0,0.3);
+
+}
+
+#reservedTable{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#confirmation{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+}

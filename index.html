@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Lab Part 1</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik+Mono+One" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="topContent">
+          <h1 class="rubik titles">Table Finder</h1>
+          <p class="roboto titles">Pick Your Table Now</p>
+        </div>
+        <div class="tables">
+          <div id="table-1" class="table open">1</div>
+          <div id="table-2" class="table open">2</div>
+          <div id="table-3" class="table open">3</div>
+          <div id="table-4" class="table open">4</div>
+          <div id="table-5" class="table open">5</div>
+          <div id="table-6" class="table open">6</div>
+          <div id="table-7" class="table open">7</div>
+          <div id="table-8" class="table open">8</div>
+          <div id="table-9" class="table open">9</div>
+
+        </div>
+      </div>
+    </div>
+    <div id="formContainer" class="hidden">
+      <div id="form">
+        <p class="exitButton close roboto">x</p>
+        <h2 class="rubik">New Reservation</h2>
+        <div class="tableNumber roboto">Table Number: </div>
+        <input class="inputs name roboto" type="text" name="name" placeholder="name" />
+        <input class="inputs number roboto" type="text" name="telephone" placeholder="telephone number" />
+        <input class="inputs people roboto" type="number" name="number" min="1" max="10" placeholder="how large is your party?"/>
+      </div>
+      <button class="saveButton button roboto" type="button" name="button">save</button>
+    </div>
+    <div id="reservedTable" class="hidden">
+      <p class="rubik">This table is reserved</p>
+      <button class="exitButton button roboto" type="button" name="button">choose another table</button>
+      <p class="clear roboto">clear reservation</p>
+
+    </div>
+    <div id="confirmation" class="hidden">
+      <p class="rubik">Your Reservation is Confirmed</p>
+      <button class="exitButton button roboto" type="button" name="button">exit</button>
+    </div>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
