@@ -39,21 +39,13 @@ $(()=> {
         });
       }
 
+      //if the table is open makes form and other interactivity
       else if ($(this).hasClass('open')===true){
-        tableNumber = $(event)["0"].currentTarget.childNodes["0"].data;
+        tableNumber = $(this).text();
         $('#formContainer').show();
 
-        $('.tableNumber').append(`${tableNumber}`);
+        $('.tableNumber').append(`<p>Table Number: ${tableNumber}</p>`);
         $('.saveButton').on('click', ()=> {
-          let name = $('.name').val();
-          let number = $('.number').val();
-          let people = $('.people').val();
-          let table = {
-            "name": name,
-            "number": number,
-            "people": people
-          };
-
 
           //change the reserved status
           $(this).removeClass('open');
@@ -67,26 +59,29 @@ $(()=> {
           //exit button hides confirmation pop-up
           $('.exitButton').on('click', ()=>{
             $('#confirmation').hide();
+            $('.tableNumber').empty();
+          });
 
-          })
+        });
 
-          // console.log(table);
+        //exit button
+        $('.exitButton').on('click', ()=>{
+          $('#formContainer').hide();
+          $('.tableNumber').empty();
+        });
+      };
 
-        })
+    });
+
+});
+
+
+
+
+
 
         //ux exit modal by clicking outside it
         // $('.container').on('click', ()=>{
         //   $('#formContainer').removeClass('see');
         //   $('#formContainer').addClass('hidden');
         // });
-        //exit button
-        $('.exitButton').on('click', ()=>{
-          $('#formContainer').hide();
-        });
-      };
-
-    });
-
-
-
-});
