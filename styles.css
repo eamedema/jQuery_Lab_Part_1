@@ -124,7 +124,7 @@
   border-left: none;
   border-right: none;
   border-bottom: solid 3px #CCC;
-  
+
 }
 
 .button {
@@ -137,6 +137,11 @@
 
 }
 
+/* #reservedTable {
+  height: 100vh;
+  width: 100vw;
+} */
+
 #reservedTable{
   position: absolute;
   left: 50%;
@@ -148,6 +153,10 @@
   padding: 10px;
 }
 
+/* #confirmation {
+  height: 100vh;
+  width: 100vw;
+} */
 #confirmation{
   position: absolute;
   left: 50%;
