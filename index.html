@@ -30,7 +30,7 @@
     </div>
     <div id="formContainer" class="hidden">
       <div id="form">
-        <p class="exitButton close roboto">x</p>
+        <p id="modalExit" class="exitButton close roboto">x</p>
         <h2 class="rubik">New Reservation</h2>
         <div class="tableNumber roboto"></div>
         <input class="inputs name roboto" type="text" name="name" placeholder="name" />
@@ -41,13 +41,13 @@
     </div>
     <div id="reservedTable" class="hidden">
       <p class="rubik">This table is reserved</p>
-      <button class="exitButton button roboto" type="button" name="button">choose another table</button>
+      <button id="modalChooseAnotherExit" class="exitButton button roboto" type="button" name="button">choose another table</button>
       <p class="clear roboto">clear reservation</p>
 
     </div>
     <div id="confirmation" class="hidden">
       <p class="rubik">Your Reservation is Confirmed</p>
-      <button class="exitButton button roboto" type="button" name="button">exit</button>
+      <button id="modalConfirmExit" class="exitButton button roboto" type="button" name="button">exit</button>
     </div>
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
